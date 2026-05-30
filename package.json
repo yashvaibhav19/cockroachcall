@@ -1,0 +1,17 @@
+{
+  "name": "anon-webrtc-call",
+  "version": "2.0.0",
+  "description": "Anonymous, fully client-side peer-to-peer WebRTC audio/video calling webapp",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "bun build src/app.js --outdir public --minify",
+    "dev": "bun run build && bun dev-server.js",
+    "dev:https": "bun run build && HTTPS=1 bun dev-server.js",
+    "certs": "mkdir -p certs && mkcert -install && mkcert -cert-file certs/cert.pem -key-file certs/key.pem localhost 127.0.0.1 ::1"
+  },
+  "dependencies": {
+    "trystero": "^0.24.0"
+  }
+}

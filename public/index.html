@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cockroach Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- View 1: Home / Lobby -->
+    <section id="lobby">
+      <h1>Cockroach Call</h1>
+      <p class="tagline">Private, peer-to-peer audio &amp; video. No sign-up, no logs.</p>
+
+      <button id="createBtn" class="primary">Create Anonymous Room</button>
+
+      <div class="divider">or</div>
+
+      <div class="join-row">
+        <input id="joinInput" placeholder="Enter room key" autocomplete="off">
+        <button id="joinBtn">Join</button>
+      </div>
+
+    <!-- Topics: conversation starters, shown below main calling card -->
+    <section id="topics" class="topics-card">
+      <header class="topics-header">
+        <h2>Random topics to talk about</h2>
+      </header>
+      <div class="topics-table-wrap">
+        <table class="topics-table">
+          <thead>
+            <tr>
+              <th scope="col">Topic</th>
+              <th scope="col" class="link-col">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Learn how to file RTI</td>
+              <td><a href="https://biharitomcruise.com/mountain/rti.html" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>NEET 2026 paper leak: 30-Year-Old Nashik Student Leaked NEET Paper 45 Hours Before Exam (May 2026)</td>
+              <td><a href="https://www.ndtv.com/education/neet-ug-2026-paper-leak-nashik-student-allegedly-bought-paper-for-rs-10-lakh-sold-it-for-rs-15-lakh-11487692" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>NEET-UG 2024 paper leak: CBI probe, 13 arrested in Bihar, Supreme Court acknowledges 155 students benefited (May&ndash;July 2024)</td>
+              <td><a href="https://en.wikipedia.org/wiki/2024_NEET_controversy" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>UGC-NET June 2024 cancelled by Education Ministry after question paper found on darknet; handed to CBI (19 June 2024)</td>
+              <td><a href="https://ummid.com/news/2024/june/20-06-2024/govt-cancels-ugc-net-june-2024-conducted-by-nta-amid-reports-of-paper-leak.html" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>UPPSC RO/ARO Prelims 2024 cancelled by CM Yogi after paper leak allegations; re-exam ordered in six months (Feb 2024)</td>
+              <td><a href="https://news.careers360.com/uppsc-ro-aro-exam-cancelled-over-paper-leak-allegations-re-exam-in-six-months" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>BPSC 70th Integrated CCE 2024: aspirants boycott Patna centre alleging paper leak; re-exam ordered for Bapu Pariksha Parisar (13 Dec 2024)</td>
+              <td><a href="https://academycheck.com/blog/bpsc-exam-chaos-what-really-happened-december-13" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>BPSC 67th Combined Competitive Exam 2022 cancelled after question paper went viral on social media (May 2022)</td>
+              <td><a href="https://en.wikipedia.org/wiki/Paper_leak_in_India" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>REET 2021 Rajasthan Teacher Eligibility Test paper leak; Level-2 exam cancelled after protests, 16 lakh candidates affected (Sept 2021&ndash;Feb 2022)</td>
+              <td><a href="https://www.tribuneindia.com/news/india/vyapam-to-reet-to-neet-heres-a-10-year-timeline-of-paper-leak-scandals/" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Rajasthan REET 2023 dummy-candidate scam: FIR filed against 30 teachers who became teachers using imposters (2024 disclosure)</td>
+              <td><a href="https://www.patrika.com/jaipur-news/rajasthan-reet-exam-scam-fir-filed-against-30-teachers-who-passed-using-dummy-candidates-20476505" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>TSPSC Telangana paper leak: 9 arrested incl. TSPSC employees who stole data from confidential section; Assistant Engineer exam compromised (March 2023)</td>
+              <td><a href="https://www.thenewsminute.com/telangana/explained-how-did-telangana-recruitment-paper-leak-174589" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>TSPSC paper leak: Pen drive recovered with question papers of 15 exams held over 6 months; 30 lakh aspirants impacted (March 2023)</td>
+              <td><a href="https://thefederal.com/states/south/telangana/telangana-why-tspsc-question-paper-leak-is-a-bolt-from-the-blue-for-job-aspirants" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Gujarat GSSSB Head Clerk exam 2021 cancelled after paper leaked from Surya Offset Press, Ahmedabad; sold for Rs 10&ndash;15 lakh (Dec 2021)</td>
+              <td><a href="https://thefederal.com/states/west/gujarat/after-13-govt-exam-paper-leaks-in-nine-years-gujarat-proposes-new-law" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Gujarat Junior Clerk recruitment exam 2023 cancelled hours before start due to paper leak (Jan 2023)</td>
+              <td><a href="https://m.thewire.in/article/government/gujarats-recruitment-scam-model-11-papers-leaked-201-accused-but-no-action-taken" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>RRB NTPC Railway Recruitment exam paper leak: candidates supplied papers + answers for premium money in 6 cities (2022)</td>
+              <td><a href="https://www.deccanherald.com/india/railways-recruitment-exam-paper-leak-rrb-ex-chairman-convicted-gets-five-years-in-prison-2871542" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>CBI arrests 26 East Central Railway officials in Mughal Sarai for departmental exam paper leak; Rs 1.17 crore cash seized (2022)</td>
+              <td><a href="https://theprint.in/india/paper-leak-falllout-railway-ministry-ropes-in-rrb-for-all-departmental-promotional-exam/2535145/" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Maharashtra TET 2019&ndash;2020 marks-manipulation scam: Pune Cyber Crime arrests IAS officer &amp; MSCE chairman Tukaram Supe; 7,880 candidates debarred (Dec 2021&ndash;2022)</td>
+              <td><a href="https://www.freepressjournal.in/mumbai/cyber-crime-unit-of-pune-city-police-arrest-ias-officer-from-thane-in-tet-exam-marks-manipulation-case" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Maharashtra TET 2024 Kolhapur paper leak racket busted; 18 arrested, papers sold for Rs 3 lakh each (Nov 2024)</td>
+              <td><a href="https://www.devdiscourse.com/article/education/3709900-maharashtra-police-busters-tet-question-paper-leak-racket" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>MH-CET 2024 alleged scam: Congress flags students with 35&ndash;40% in SSC/HSC scoring 100% in MH-CET (2024)</td>
+              <td><a href="https://www.theweek.in/news/india/2026/05/19/after-neet-now-mht-cet-congress-alleges-major-exam-scam-in-maharashtra.html" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>MP Patwari recruitment scam 2023: 7 of top 10 toppers from a single BJP-MLA-owned centre; recruitment paused (July 2023)</td>
+              <td><a href="https://www.newslaundry.com/2023/07/20/30-with-fake-disability-217-below-age-7-toppers-from-bjp-mlas-centre-mps-new-vyapam-scam" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>MP Teacher Eligibility Test (March 2022) leak allegations; Vyapam whistleblower Dr Anand Rai arrested over post (2024)</td>
+              <td><a href="https://theprint.in/india/vyapam-whistleblower-alleges-harassment-over-exam-leak-post-mp-police-justify-arrest/913516/" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>SSC CGL and related recruitment irregularities: Eduquity Career Technologies fraud allegations spark SSC aspirant protests (2024)</td>
+              <td><a href="https://legalmaestros.com/current-legal-update/eduquity-career-technologies-alleged-fraud-political-donations-and-constitutional-rights-violations-in-the-wake-of-ssc-protests/" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Public Examinations (Prevention of Unfair Means) Act, 2024 enacted by Parliament covering UPSC, SSC, NTA, Railways after wave of leaks (Feb 2024)</td>
+              <td><a href="https://www.nextias.com/beyond-classroom/exam-paper-leak" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Vyapam-to-NEET 10-year timeline of major paper-leak scandals across Indian states (2024 retrospective)</td>
+              <td><a href="https://www.tribuneindia.com/news/india/vyapam-to-reet-to-neet-heres-a-10-year-timeline-of-paper-leak-scandals/" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+            <tr>
+              <td>Comprehensive Wikipedia tracker of paper leaks in India listing every major incident 2020&ndash;2024</td>
+              <td><a href="https://en.wikipedia.org/wiki/Paper_leak_in_India" target="_blank" rel="noopener noreferrer">Read more</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    </section>
+
+    <!-- View 2: Call Room -->
+    <section id="call" hidden>
+      <div class="stage">
+        <video id="remoteVideo" autoplay playsinline></video>
+        <video id="localVideo" autoplay playsinline muted></video>
+        <p id="status" class="status"></p>
+      </div>
+
+      <div class="controls">
+        <button id="muteBtn">Mute</button>
+        <button id="videoBtn">Stop Video</button>
+        <button id="leaveBtn" class="danger">Leave</button>
+      </div>
+
+      <div class="invite">
+        <label for="inviteLink">Invite link — share it to let one person in</label>
+        <div class="invite-row">
+          <input id="inviteLink" readonly>
+          <button id="copyBtn">Copy</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
